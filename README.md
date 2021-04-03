@@ -1,4 +1,3 @@
-# The-Kelvin-Cuevas-Collection
 <!doctype html>
 <html>
 <head>
@@ -6,128 +5,124 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
 	body {
+		font-family: 'Arial', sans serif; 
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.container {
 		background-image: url("Website Background.jpg");
-		background-position: top;
+		background-position: center top;
 		background-repeat: no-repeat;
-		bacground-size: cover;
-		height: 1830px;
-		 }
-	
-	h1 {color: black; font-family: 'Arial'; font-size: 15px; font-weight: bolder;}
-	h2 {color: grey; font-family: 'Calibri'; font-size: 15px;}
-
-	.Selection1 {
-		padding: 20px;
-			   }
-	.Selection1 {
-		padding-left: 1050px;
-			   }
-	
-	.bHome {
-		border: none;
-		font-family: 'Arial';
-		background-color: inherit;
-		padding: 1px 16px;
-		font-size: 25px;
-  		cursor: pointer;
-  		display: inline-block;
-  		color: white;
-		   }
-  	.bHome:hover {color: #00ffb4;}
-  	.success {color: green;}
-	
-  	.bAbout {
- 		border: none;
-  		font-family: 'Arial';
-  		background-color: inherit;
- 		padding: 1px 16px;
-  		font-size: 25px;
-  		cursor: pointer;
-  		display: inline-block;
-  		color: white;
-		     }
-  	.bAbout:hover {color: #00ffb4;}
- 	.success {color: green;}
- 
-	.bCollection {
-  		border: none;
-  		font-family: 'Arial';
-  		background-color: inherit;
-  		padding: 1px 16px;
-  		font-size: 25px;
-  		cursor: pointer;
-  		display: inline-block;
-  		color: white;
-		  		  }
-  	.bCollection:hover {color: #00ffb4;}
-  	.success {color: green;}
-	
-	.bBehance {
- 		border: none;
-  		font-family: 'Arial';
-  		background-color: inherit;
-  		padding: 1px 16px;
-  		font-size: 25px;
-  		cursor: pointer;
-  		display: inline-block;
-  		color: white;
+		background-size: cover;
 		
-		  	  }
-  	.bBehance:hover {color: #00ffb4;}
-  	.success {color: green;}
-	
-	.iAbout {
-	    display: FLEX;
-    	flex-wrap: wrap;
-    	align-items: center;
-   		justify-content: flex-end;
-   		padding-right: 490px;    
-    	height: 25.5%;  
-			 }
-	
-	.A1 {
-		display: FLEX;
-    	flex-wrap: wrap;
-    	align-items: center;
-   		justify-content: flex-end;
-   		padding-right: 1355px;  
-	    }
-	.A2 {
-		padding-top: 555px;
-	    }
-	
-	.P1 {
-		display: FLEX;
-    	flex-wrap: wrap;
-    	align-items: center;
-   		justify-content: flex-end;
-		text-align: justify;
-  		text-justify: inter-word;
-   		width: 840px;  
+		max-width: 1366px;
+		margin: auto;
+	}
+	@media screen and (max-width: 768px) {
+		.container {
+			background-size: 768px;
 		}
-	.P2 {
-   		padding-left: 530px;
+	}
+	.nav-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		padding: 24px;
+	}
+	.bHome, .bAbout, .bCollection, .bBehance {
+		text-decoration: none;
+		color: white;
+		padding: 0 16px;
+		font-size: 25px;
+	}
+	@media screen and (max-width: 768px) {
+		.bHome, .bAbout, .bCollection, .bBehance {
+			font-size: 20px;
 		}
+	}
+	
+	@media screen and (max-width: 320px) {
+		.container {
+			background-size: 320px;
+		}
+	}
+	.nav-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		padding: 24px;
+	}
+	
+	@media screen and (max-width: 320px) {
+		.bHome, .bAbout, .bCollection, .bBehance {
+			font-size: 8px;
+		}
+	}
+	
+	.about {
+		max-width: 800px;
+		margin: auto;
+		
+		padding-top: 550px;
+		padding-bottom: 1000px;
+	}
+	@media screen and (max-width: 768px) {
+		.about {
+			padding-top: 250px;
+			padding-bottom: 550px;
+			max-width: 700px;
+			font-size: 14px;
+		}
+	}
+	@media screen and (max-width: 320px) {
+		.about {
+			padding-top: 50px;
+			font-size: 8px;
+		}
+	}
+	.about p {
+		color: gray;
+		font-weight: bold;
+	}
+	
+	@media screen and (max-width: 320px) {
+		.about p {
+			padding-top: 1px;
+			font-size: 12x;
+			line-height: 12px;
+		}
+	}
+	
+	@media screen and (max-width: 320px) {
+		h1 {
+			font-size: 10px;
+			margin-bottom: 1px;
+			line-height: 14px;	
+		}
+	}
 </style>
 
 <body>
-	
-	<div class="Selection1">
-		<button class="bHome">Home</button>
-		<button class="bAbout">About</button>
-		<button class="bCollection">Collection</button>
-		<button class="bBehance"><a href="https://www.behance.net/kelvincuevas">Behance</a></button>
-		
-	</div>
-	<div class="A2">
-		<div class="A1">
+	<div class="container">
+		<nav class="nav-items">
+			<a class="bHome" href="#A1">Home</a>
+			<a class="bAbout" href="#about">About</a>
+			<a class="bCollection" href="#collection">Collection</a>
+			<a class="bBehance" href="https://www.behance.net/kelvincuevas">Behance</a>
+		</nav>
+		<div class="about" id="about">
 			<h1>ABOUT</h1>
+			<p>
+				I am Kelvin Lance M. Cuevas and currently a second year student taking a course of Bachelor of Arts in Multimedia Arts. I am  a freelance artist capable to work  for your demands having enthusiasm to collaborate within a team. This portfolio may serve to showcase my products in automotive photography. However, most of my works include graphic design, video editing, 3D modelling, and a hint of 2D animation. Hope to work with you soon!
+			</p>
 		</div>
-	</div>
-	<div class="P2">
-		<div class="P1">
-			<h2>I am Kelvin Lance M. Cuevas and currently a second year student taking a course of Bachelor of Arts in Multimedia Arts. I am  a freelance artist capable to work  for your demands having enthusiasm to collaborate within a team. This portfolio may serve to showcase my products in automotive photography. However, most of my works include graphic design, video editing, 3D modelling, and a hint of 2D animation. Hope to work with you soon!</h2>
+		<div class="collection" id="collection">
+		
 		</div>
 	</div>
 	
