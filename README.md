@@ -16,7 +16,7 @@
 		line-height: 24px;
 	}
 	.container {
-		background-image: url("Website Background.jpg");
+		background-image: url("https://imgur.com/jT1GTnj.jpg");
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
